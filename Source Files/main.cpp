@@ -33,9 +33,10 @@ int main() {
 			std::cout << "\nYour input must only contain digits!\n\n";
 		}
 		else {
+			// Create a dynamic bitset from the user's input
 			DynamicBitset binary(std::stoi(in));
 
-			//Print the binary representation and loop back to the start of the program
+			// Print the binary representation and loop back to the start of the program
 			std::cout << "That number in binary is: ";
 			binary.print();
 			std::cout << "\n\n";
