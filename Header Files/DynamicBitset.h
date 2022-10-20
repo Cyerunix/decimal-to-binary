@@ -8,7 +8,7 @@ public:
 	Creates a dynamic bitset from the given number
 	@param int num - The number
 	*/
-	DynamicBitset(int num);
+	DynamicBitset(std::int_fast64_t num);
 
 	/*
 	Creates a dynamic bitset from the given number
@@ -31,5 +31,5 @@ private:
 	@param const int& value - The value of which to calculate the logarithm
 	@return const double - The logarithm of the given value calculated to the given base
 	*/
-	const double smartLog(const int& base, const int& value) const;
+	const double smartLog(const std::int_fast64_t& base, const std::int_fast64_t& value) const;
 };
