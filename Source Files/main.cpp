@@ -3,7 +3,8 @@
 @version 1.0.0
 @date 10/19/22
 
-Takes an integer input from the user and converts it to binary using the fewest bits possible
+Takes an integer input from the user and converts it to binary using the fewest bits possible, assuming the number is signed
+Input must be between -9,223,372,036,854,775,808 and 9,223,372,036,854,775,807
 */
 
 #include <iostream>
@@ -34,7 +35,7 @@ int main() {
 		}
 		else {
 			// Create a dynamic bitset from the user's input
-			DynamicBitset binary(std::stoi(in));
+			DynamicBitset binary(std::stoll(in));
 
 			// Print the binary representation and loop back to the start of the program
 			std::cout << "That number in binary is: ";
