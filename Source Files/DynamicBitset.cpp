@@ -1,6 +1,6 @@
 #include "DynamicBitset.h"
 
-DynamicBitset::DynamicBitset(int num)
+DynamicBitset::DynamicBitset(std::int_fast64_t num)
 {
 	bits = std::vector<bool>(static_cast<std::size_t>(std::trunc(smartLog(2, std::abs(num))) + 2));
 
@@ -19,7 +19,7 @@ void DynamicBitset::print() const
 	}
 }
 
-const double DynamicBitset::smartLog(const int& base, const int& value) const
+const double DynamicBitset::smartLog(const std::int_fast64_t& base, const std::int_fast64_t& value) const
 {
 	return log10(value) / log10(base);
 }
